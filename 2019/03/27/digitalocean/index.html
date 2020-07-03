@@ -1,4 +1,121 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="icon" href="wyprun.github.io/images/icons/favicon-16x16.png?v=2.0.1" type="image/png" sizes="16x16"><link rel="icon" href="wyprun.github.io/images/icons/favicon-32x32.png?v=2.0.1" type="image/png" sizes="32x32"><meta name="description" content="在前面的一篇博客中我们已经学习了如何申请GitHub学生优惠，现在我们再来学习一下DigitalOcean的使用方法，使你能够科学合理的上网，开阔自己的眼界。当然，一般的学术需求也可以通过Bing学术满足，一般情况下高校的校园网都有相应的下载权限，能够保证各位的正常学术。">
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<meta name="theme-color" content="#222"/>
+
+
+
+
+  
+  
+    
+    
+  <script src="wyprun.github.io/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link rel="stylesheet" href="wyprun.github.io/lib/pace/pace-theme-corner-indicator.min.css?v=1.0.2"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link rel="stylesheet" href="wyprun.github.io/lib/fancybox/source/jquery.fancybox.css"/>
+
+
+
+
+
+
+
+<link rel="stylesheet" href="wyprun.github.io/lib/font-awesome/css/font-awesome.min.css?v=4.6.2"/>
+
+<link rel="stylesheet" href="wyprun.github.io/css/main.css?v=7.0.1"/>
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="wyprun.github.io/images/apple-touch-icon-next.png?v=7.0.1">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="wyprun.github.io/images/me.ico?v=7.0.1">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="wyprun.github.io/images/favicon-16x16-next.png?v=7.0.1">
+
+
+  <link rel="mask-icon" href="wyprun.github.io/images/logo.svg?v=7.0.1" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: 'wyprun.github.io/',
+    scheme: 'Gemini',
+    version: '7.0.1',
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false,"dimmer":false},
+    back2top: true,
+    back2top_sidebar: true,
+    fancybox: true,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+	<script>
+		(function(i,s,o,g,r,a,m){i["DaoVoiceObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;a.charset="utf-8";m.parentNode.insertBefore(a,m)})(window,document,"script",('https:' == document.location.protocol ? 'https:' : 'http:') + "//widget.daovoice.io/widget/c96195cd.js","daovoice")
+		daovoice('init', {
+			app_id: "c96195cd"
+		});
+		daovoice('update');
+	</script>
+
+
+  <meta name="description" content="在前面的一篇博客中我们已经学习了如何申请GitHub学生优惠，现在我们再来学习一下DigitalOcean的使用方法，使你能够科学合理的上网，开阔自己的眼界。当然，一般的学术需求也可以通过Bing学术满足，一般情况下高校的校园网都有相应的下载权限，能够保证各位的正常学术。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="DigitalOcean科学上网">
 <meta property="og:url" content="http://yoursite.com/2019/03/27/digitalocean/index.html">
@@ -26,34 +143,463 @@
 <meta property="article:tag" content="digitalocean">
 <meta property="article:tag" content="暗影袜子">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://yoursite.com/images/digitalocean/signup.png"><meta name="keywords" content="Yu, wyp"><meta name="description" content="谁都想一直是少年"><title>DigitalOcean科学上网 | wyp</title><link ref="canonical" href="http://yoursite.com/2019/03/27/digitalocean/"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.1/css/all.min.css" type="text/css"><link rel="stylesheet" href="wyprun.github.io/css/index.css?v=2.0.1"><script>var Stun = window.Stun || {};
-var CONFIG = {
-  root: 'wyprun.github.io/',
-  algolia: undefined,
-  fontIcon: {"prompt":{"success":"fas fa-check-circle","info":"fas fa-arrow-circle-right","warning":"fas fa-exclamation-circle","error":"fas fa-times-circle"},"copyBtn":"fas fa-copy"},
-  sidebar: {"offsetTop":"20px","tocMaxDepth":6},
-  header: {"enable":true,"showOnPost":true,"scrollDownIcon":false},
-  postWidget: {"endText":true},
-  nightMode: {"enable":true},
-  back2top: {"enable":true},
-  codeblock: {"style":"default","highlight":"light","wordWrap":false},
-  reward: false,
-  fancybox: false,
-  zoomImage: {"gapAside":"20px"},
-  galleryWaterfall: undefined,
-  lazyload: false,
-  pjax: undefined,
-  externalLink: {"icon":{"enable":true,"name":"fas fa-external-link-alt"}},
-  shortcuts: undefined,
-  prompt: {"copyButton":"复制","copySuccess":"复制成功","copyError":"复制失败"},
-  sourcePath: {"js":"js","css":"css","images":"images"},
-};
+<meta name="twitter:image" content="http://yoursite.com/images/digitalocean/signup.png">
 
-window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 4.2.1"></head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner"><nav class="header-nav header-nav--fixed"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">首页</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/archives/"><span class="header-nav-menu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-menu-item__text">归档</span></a></div></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav><div class="header-banner"><div class="header-banner-info"><div class="header-banner-info__title">wyp</div><div class="header-banner-info__subtitle"></div></div></div></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content" id="content"><!-- Just used to judge whether it is an article page--><div id="is-post"></div><div class="post"><header class="post-header"><h1 class="post-title">DigitalOcean科学上网</h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2019-03-27</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2020-07-03</span></span></div></header><div class="post-body"><p>在前面的一篇博客中我们已经学习了如何申请GitHub学生优惠，现在我们再来学习一下DigitalOcean的使用方法，使你能够科学合理的上网，开阔自己的眼界。当然，一般的学术需求也可以通过<span class="exturl"><a class="exturl__link"   href="https://cn.bing.com/academic/?FORM=Z9LH2"  target="_blank" rel="noopener">Bing学术</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>满足，一般情况下高校的校园网都有相应的下载权限，能够保证各位的正常学术。<a id="more"></a>废话不多说，我们进入正题，这里使用的是DigitalOcean服务器+暗影袜子(shadowsocks)+IPV6免流上网，一般的校园网都会开通IPV6，当然对于校园网资费合理的高校，你使不使用IPV6都可以，但是对于我们学校来说，高昂的流量费，让我们难以承受，只能依托于IPV6。</p>
 
-        <h1 id="注册账号"   >
-          <a href="#注册账号" class="heading-link"><i class="fas fa-link"></i></a>注册账号</h1>
-      <p>想要使用digitalocean，一个账号在所难免，点击<span class="exturl"><a class="exturl__link"   href="https://www.digitalocean.com/"  target="_blank" rel="noopener">注册账号</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>进行注册，注册时需要绑定一张<strong>信用卡</strong>或<strong>PayPal账户</strong>用于付款。采用绑定信用卡的方式，是为了确定账户的可以付款，会先从账户中扣除1刀，10分钟左右返还，也就是实际没有花钱；小编没有采用绑定PayPal账户的方式，这种方式必须至少充值5刀，也就是花钱了，孰优孰劣，读者自琢。注册页面如下：</p>
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2019/03/27/digitalocean/"/>
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>DigitalOcean科学上网 | wyp</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="wyprun.github.io/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">wyp</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="wyprun.github.io/" rel="section">&lt;i class&#x3D;&quot;menu-item-icon fa fa-fw fa-home&quot;&gt;&lt;&#x2F;i&gt; &lt;br&#x2F;&gt;首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="wyprun.github.io/about/" rel="section">&lt;i class&#x3D;&quot;menu-item-icon fa fa-fw fa-user&quot;&gt;&lt;&#x2F;i&gt; &lt;br&#x2F;&gt;关于</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="wyprun.github.io/tags/" rel="section">&lt;i class&#x3D;&quot;menu-item-icon fa fa-fw fa-tags&quot;&gt;&lt;&#x2F;i&gt; &lt;br&#x2F;&gt;标签&lt;span class&#x3D;&quot;badge&quot;&gt;6&lt;&#x2F;span&gt;</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="wyprun.github.io/categories/" rel="section">&lt;i class&#x3D;&quot;menu-item-icon fa fa-fw fa-th&quot;&gt;&lt;&#x2F;i&gt; &lt;br&#x2F;&gt;分类&lt;span class&#x3D;&quot;badge&quot;&gt;3&lt;&#x2F;span&gt;</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="wyprun.github.io/archives/" rel="section">&lt;i class&#x3D;&quot;menu-item-icon fa fa-fw fa-archive&quot;&gt;&lt;&#x2F;i&gt; &lt;br&#x2F;&gt;归档&lt;span class&#x3D;&quot;badge&quot;&gt;6&lt;&#x2F;span&gt;</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-commonweal">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="wyprun.github.io/404/" rel="section">&lt;i class&#x3D;&quot;menu-item-icon fa fa-fw fa-heartbeat&quot;&gt;&lt;&#x2F;i&gt; &lt;br&#x2F;&gt;公益 404</a>
+
+  </li>
+
+      
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br/>搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+  
+  
+  
+  
+
+  
+
+  <a href="https://github.com/wyprun" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank">&lt;svg width&#x3D;&quot;80&quot; height&#x3D;&quot;80&quot; viewBox&#x3D;&quot;0 0 250 250&quot; style&#x3D;&quot;fill: #222; color: #fff; position: absolute; top: 0; border: 0; right: 0;&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;path d&#x3D;&quot;M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z&quot;&gt;&lt;&#x2F;path&gt;&lt;path d&#x3D;&quot;M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2&quot; fill&#x3D;&quot;currentColor&quot; style&#x3D;&quot;transform-origin: 130px 106px;&quot; class&#x3D;&quot;octo-arm&quot;&gt;&lt;&#x2F;path&gt;&lt;path d&#x3D;&quot;M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z&quot; fill&#x3D;&quot;currentColor&quot; class&#x3D;&quot;octo-body&quot;&gt;&lt;&#x2F;path&gt;&lt;&#x2F;svg&gt;</a>
+
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+    <div class="reading-progress-bar"></div>
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.comwyprun.github.io/2019/03/27/digitalocean/"/>
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Yu"/>
+      <meta itemprop="description" content="谁都想一直是少年"/>
+      <meta itemprop="image" content="wyprun.github.io/images/me.jpg"/>
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="wyp"/>
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">DigitalOcean科学上网
+
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-03-27 18:20:23" itemprop="dateCreated datePublished" datetime="2019-03-27T18:20:23+08:00">2019-03-27</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2020-07-03 18:18:21" itemprop="dateModified" datetime="2020-07-03T18:18:21+08:00">2020-07-03</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="wyprun.github.io/categories/digitalocean/" itemprop="url" rel="index"><span itemprop="name">digitalocean</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+            <span id="wyprun.github.io/2019/03/27/digitalocean/" class="leancloud_visitors" data-flag-title="DigitalOcean科学上网">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              
+                <span class="post-meta-item-text">阅读次数：</span>
+              
+                <span class="leancloud-visitors-count"></span>
+            </span>
+          
+
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
+                
+                <span title="本文字数"></span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长"></span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>在前面的一篇博客中我们已经学习了如何申请GitHub学生优惠，现在我们再来学习一下DigitalOcean的使用方法，使你能够科学合理的上网，开阔自己的眼界。当然，一般的学术需求也可以通过<a href="https://cn.bing.com/academic/?FORM=Z9LH2" target="_blank" rel="noopener">Bing学术</a>满足，一般情况下高校的校园网都有相应的下载权限，能够保证各位的正常学术。<a id="more"></a>废话不多说，我们进入正题，这里使用的是DigitalOcean服务器+暗影袜子(shadowsocks)+IPV6免流上网，一般的校园网都会开通IPV6，当然对于校园网资费合理的高校，你使不使用IPV6都可以，但是对于我们学校来说，高昂的流量费，让我们难以承受，只能依托于IPV6。</p>
+<h1 id="注册账号"><a href="#注册账号" class="headerlink" title="注册账号"></a>注册账号</h1><p>想要使用digitalocean，一个账号在所难免，点击<a href="https://www.digitalocean.com/" target="_blank" rel="noopener">注册账号</a>进行注册，注册时需要绑定一张<strong>信用卡</strong>或<strong>PayPal账户</strong>用于付款。采用绑定信用卡的方式，是为了确定账户的可以付款，会先从账户中扣除1刀，10分钟左右返还，也就是实际没有花钱；小编没有采用绑定PayPal账户的方式，这种方式必须至少充值5刀，也就是花钱了，孰优孰劣，读者自琢。注册页面如下：</p>
 <p><img src="/images/digitalocean/signup.png" alt=""></p>
 <ol>
 <li><p>注册页面，填写邮箱和密码，然后<strong>Create your account</strong>。 </p>
@@ -66,67 +612,37 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 4.2.1"></he
 <li><p>绑定之后即可获得100刀的奖励，需要在一定的时间内使用，否则将会失效，在余额用完之前不会从信用卡扣除费用。</p>
 </li>
 </ol>
-
-        <h1 id="创建小水滴-Droplets-服务器"   >
-          <a href="#创建小水滴-Droplets-服务器" class="heading-link"><i class="fas fa-link"></i></a>创建小水滴(Droplets)服务器</h1>
-      <p>现在你已经有100刀可以使用了，那么我们就开始创建小水滴吧。我们先来看一下操作界面是什么样的：</p>
+<h1 id="创建小水滴-Droplets-服务器"><a href="#创建小水滴-Droplets-服务器" class="headerlink" title="创建小水滴(Droplets)服务器"></a>创建小水滴(Droplets)服务器</h1><p>现在你已经有100刀可以使用了，那么我们就开始创建小水滴吧。我们先来看一下操作界面是什么样的：</p>
 <p><img src="/images/digitalocean/screen.png" alt=""></p>
 <p>这里我已经创建好了一个小水滴，也可以看到我的100刀变少了，这是必然，现在我们进入正题：</p>
-
-        <h2 id="选择服务器系统"   >
-          <a href="#选择服务器系统" class="heading-link"><i class="fas fa-link"></i></a>选择服务器系统</h2>
-      <p>首先点击图中所示的几项：MANAGE–&gt;Droplets–&gt;Create–&gt;Droplets,进入创建Droplets的界面:</p>
+<h2 id="选择服务器系统"><a href="#选择服务器系统" class="headerlink" title="选择服务器系统"></a>选择服务器系统</h2><p>首先点击图中所示的几项：MANAGE–&gt;Droplets–&gt;Create–&gt;Droplets,进入创建Droplets的界面:</p>
 <p><img src="/images/digitalocean/create.jpg" alt=""></p>
 <p>这里根据你对Ubuntu的使用习惯，选择服务器，因为我经常使用16.04版本的Ubuntu，所以我选择这一款。之前也使用过18.04版本，但是由于该版本进行了相应的改动，而且装机bug过多，所以接触不多不是很熟悉。</p>
 <p><img src="/images/digitalocean/createimage.png" alt=""></p>
-
-        <h2 id="选择付费类型"   >
-          <a href="#选择付费类型" class="heading-link"><i class="fas fa-link"></i></a>选择付费类型</h2>
-      <p>一般情况下选择5刀每月的套餐即可，1G内存 1CPU 25GSSD容量，1TB流量，应该够你使用的，而且100刀，可以使用20个月，非常的划算。</p>
+<h2 id="选择付费类型"><a href="#选择付费类型" class="headerlink" title="选择付费类型"></a>选择付费类型</h2><p>一般情况下选择5刀每月的套餐即可，1G内存 1CPU 25GSSD容量，1TB流量，应该够你使用的，而且100刀，可以使用20个月，非常的划算。</p>
 <p><img src="/images/digitalocean/plan.png" alt="点击红色箭头寻找5刀每月"></p>
 <p><img src="/images/digitalocean/plan5.png" alt=""></p>
 <p>之后的这两项可以忽略，这两项是<strong>付费项目</strong>，在你的日常使用中应该不会有什么实质性的帮助，当然如果你是需要使用服务器部署什么项目，这又另说。</p>
 <p><img src="/images/digitalocean/unuseful.png" alt=""></p>
-
-        <h2 id="选择服务器所在地"   >
-          <a href="#选择服务器所在地" class="heading-link"><i class="fas fa-link"></i></a>选择服务器所在地</h2>
-      <p>这里就根据你测出来的实际速度来选择，这里给出官方节点测速网址：<span class="exturl"><a class="exturl__link"   href="http://speedtest-sgp1.digitalocean.com/"  target="_blank" rel="noopener">http://speedtest-sgp1.digitalocean.com/</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>，并给一下各地区的测速地址：</p>
-<p>旧金山(San Francisco)：<span class="exturl"><a class="exturl__link"   href="http://speedtest-sfo1.digitalocean.com/"  target="_blank" rel="noopener">http://speedtest-sfo1.digitalocean.com/</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span><br>新加坡(Singapore): <span class="exturl"><a class="exturl__link"   href="http://speedtest-sgp1.digitalocean.com/"  target="_blank" rel="noopener">http://speedtest-sgp1.digitalocean.com/</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span><br>纽约(New York)：<span class="exturl"><a class="exturl__link"   href="http://speedtest-ny1.digitalocean.com/"  target="_blank" rel="noopener">http://speedtest-ny1.digitalocean.com/</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span><br>荷兰阿姆斯特丹(Amsterdam)：<span class="exturl"><a class="exturl__link"   href="http://speedtest-ams1.digitalocean.com/"  target="_blank" rel="noopener">http://speedtest-ams1.digitalocean.com/</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p>
+<h2 id="选择服务器所在地"><a href="#选择服务器所在地" class="headerlink" title="选择服务器所在地"></a>选择服务器所在地</h2><p>这里就根据你测出来的实际速度来选择，这里给出官方节点测速网址：<a href="http://speedtest-sgp1.digitalocean.com/" target="_blank" rel="noopener">http://speedtest-sgp1.digitalocean.com/</a>，并给一下各地区的测速地址：</p>
+<p>旧金山(San Francisco)：<a href="http://speedtest-sfo1.digitalocean.com/" target="_blank" rel="noopener">http://speedtest-sfo1.digitalocean.com/</a><br>新加坡(Singapore): <a href="http://speedtest-sgp1.digitalocean.com/" target="_blank" rel="noopener">http://speedtest-sgp1.digitalocean.com/</a><br>纽约(New York)：<a href="http://speedtest-ny1.digitalocean.com/" target="_blank" rel="noopener">http://speedtest-ny1.digitalocean.com/</a><br>荷兰阿姆斯特丹(Amsterdam)：<a href="http://speedtest-ams1.digitalocean.com/" target="_blank" rel="noopener">http://speedtest-ams1.digitalocean.com/</a></p>
 <p><img src="/images/digitalocean/region.png" alt=""></p>
-
-        <h2 id="勾选ipv6"   >
-          <a href="#勾选ipv6" class="heading-link"><i class="fas fa-link"></i></a>勾选ipv6</h2>
-      <p>根据你的实际情况，选择你的流量通道。</p>
+<h2 id="勾选ipv6"><a href="#勾选ipv6" class="headerlink" title="勾选ipv6"></a>勾选ipv6</h2><p>根据你的实际情况，选择你的流量通道。</p>
 <p><img src="/images/digitalocean/ipv6.png" alt=""></p>
-
-        <h2 id="添加SSH-可选"   >
-          <a href="#添加SSH-可选" class="heading-link"><i class="fas fa-link"></i></a>添加SSH(可选)</h2>
-      <p>这一项是可选项，你可以不使用SSH，这时候你的服务器将自动生成一串密码，在你首次登录时，需要使用改密码，然后可以进行密码的修改。</p>
+<h2 id="添加SSH-可选"><a href="#添加SSH-可选" class="headerlink" title="添加SSH(可选)"></a>添加SSH(可选)</h2><p>这一项是可选项，你可以不使用SSH，这时候你的服务器将自动生成一串密码，在你首次登录时，需要使用改密码，然后可以进行密码的修改。</p>
 <p><img src="/images/digitalocean/choose.jpg" alt=""></p>
 <p>简单介绍一下生成密钥的命令：ssh-keygen -t rsa -C “you mail”<br>默认生成的在你的<strong>用户–&gt;用户名–&gt;/.ssh文件夹</strong>下，这里说的是<strong>windows</strong>系统，有.pub后缀的是公钥，没有的是私钥（不要改文件名称，不要泄露私钥内容）。将公钥内容全部复制到文本框，填写名称，最后确定即可。 </p>
 <p><img src="/images/digitalocean/ssh.png" alt=""></p>
-
-        <h2 id="修改主机名"   >
-          <a href="#修改主机名" class="heading-link"><i class="fas fa-link"></i></a>修改主机名</h2>
-      <p>给你的主机起个名字，当然也可以不修改，建议是修改。之后点击<strong>Create</strong>创建小水滴。</p>
+<h2 id="修改主机名"><a href="#修改主机名" class="headerlink" title="修改主机名"></a>修改主机名</h2><p>给你的主机起个名字，当然也可以不修改，建议是修改。之后点击<strong>Create</strong>创建小水滴。</p>
 <p><img src="/images/digitalocean/hostname.png" alt=""></p>
-
-        <h2 id="修改密码"   >
-          <a href="#修改密码" class="heading-link"><i class="fas fa-link"></i></a>修改密码</h2>
-      <ol>
+<h2 id="修改密码"><a href="#修改密码" class="headerlink" title="修改密码"></a>修改密码</h2><ol>
 <li>点击Droplet界面的主机</li>
 <li>点击<strong>More</strong>菜单项</li>
 <li>找到<strong>Reset root password</strong>，然后重置的root密码会以邮件的形式发送的注册邮箱。之后，用Putty这类的远程连接服务器的软件，远程登录，并修改密码。 你也可以点击<strong>Access console</strong>进行修改，这里提供了这种远程登录的服务。</li>
 </ol>
 <p>由于我在这一步没有截图，所以就需要读者自己去探索一下，也比较简单，唯一麻烦的是，它自动生成的代码非常的复杂，需要读者耐心的输入。当然如果你使用的是SSH就省去了这个麻烦。</p>
 <p><img src="/images/digitalocean/access.png" alt=""></p>
-
-        <h1 id="安装并配置暗影袜子"   >
-          <a href="#安装并配置暗影袜子" class="heading-link"><i class="fas fa-link"></i></a>安装并配置暗影袜子</h1>
-      
-        <h2 id="安装暗影袜子"   >
-          <a href="#安装暗影袜子" class="heading-link"><i class="fas fa-link"></i></a>安装暗影袜子</h2>
-      <p>给读者们提供一份官方的暗影袜子使用说明，点击<span class="exturl"><a class="exturl__link"   href="https://github.com/shadowsocks/shadowsocks/wiki/Shadowsocks-%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E"  target="_blank" rel="noopener">暗影袜子使用</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p>
+<h1 id="安装并配置暗影袜子"><a href="#安装并配置暗影袜子" class="headerlink" title="安装并配置暗影袜子"></a>安装并配置暗影袜子</h1><h2 id="安装暗影袜子"><a href="#安装暗影袜子" class="headerlink" title="安装暗影袜子"></a>安装暗影袜子</h2><p>给读者们提供一份官方的暗影袜子使用说明，点击<a href="https://github.com/shadowsocks/shadowsocks/wiki/Shadowsocks-%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E" target="_blank" rel="noopener">暗影袜子使用</a></p>
 <p>下面列出暗影袜子的安装步骤：</p>
 <blockquote>
 <p><code>$ apt-get update             // 更新源中包列表</code></p>
@@ -146,10 +662,7 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 4.2.1"></he
 <p><code>sys.exit(_main())</code></p>
 </blockquote>
 <p>对比一下修改的内容，按照给定的样板进行修改就可以，之后在重新运行<strong>安装暗影袜子</strong>的那一条命令，应该就可以成功。</p>
-
-        <h2 id="配置暗影袜子"   >
-          <a href="#配置暗影袜子" class="heading-link"><i class="fas fa-link"></i></a>配置暗影袜子</h2>
-      <p>这里也给读者提供一份官方暗影袜子配置说明，点击<span class="exturl"><a class="exturl__link"   href="https://github.com/shadowsocks/shadowsocks/wiki/Configuration-via-Config-File"  target="_blank" rel="noopener">暗影袜子配置</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p>
+<h2 id="配置暗影袜子"><a href="#配置暗影袜子" class="headerlink" title="配置暗影袜子"></a>配置暗影袜子</h2><p>这里也给读者提供一份官方暗影袜子配置说明，点击<a href="https://github.com/shadowsocks/shadowsocks/wiki/Configuration-via-Config-File" target="_blank" rel="noopener">暗影袜子配置</a></p>
 <p>下面给出配置暗影袜子的步骤：</p>
 <blockquote>
 <p><code>$ touch /etc/shadowsocks.json          // 创建SS配置文件</code></p>
@@ -184,38 +697,943 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 4.2.1"></he
 <p>安装完成之后，就可以将aes-256-cfb改为chacha20</p>
 </li>
 </ol>
-
-        <h2 id="启动暗影袜子"   >
-          <a href="#启动暗影袜子" class="heading-link"><i class="fas fa-link"></i></a>启动暗影袜子</h2>
-      <p>启动暗影袜子只需要一句命令即可</p>
+<h2 id="启动暗影袜子"><a href="#启动暗影袜子" class="headerlink" title="启动暗影袜子"></a>启动暗影袜子</h2><p>启动暗影袜子只需要一句命令即可</p>
 <blockquote>
 <p><code># ssserver -c /etc/shadowsocks.json -d start   //启动</code></p>
 <p><code># ssserver -c /etc/shadowsocks.json -d stop   //关闭</code></p>
 <p><code># ssserver -c /etc/shadowsocks.json -d restart   //重启</code></p>
 </blockquote>
-
-        <h1 id="暗影袜子客户端"   >
-          <a href="#暗影袜子客户端" class="heading-link"><i class="fas fa-link"></i></a>暗影袜子客户端</h1>
-      <p>首先到<strong><span class="exturl"><a class="exturl__link"   href="https://shadowsocks.org/en/download/clients.html"  target="_blank" rel="noopener">官网</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></strong>下载合适的客户端，因为我是用的是windows，所以选择的是windows客户端，下面进行的也是windows客户端的配置，直接上图：</p>
+<h1 id="暗影袜子客户端"><a href="#暗影袜子客户端" class="headerlink" title="暗影袜子客户端"></a>暗影袜子客户端</h1><p>首先到<strong><a href="https://shadowsocks.org/en/download/clients.html" target="_blank" rel="noopener">官网</a></strong>下载合适的客户端，因为我是用的是windows，所以选择的是windows客户端，下面进行的也是windows客户端的配置，直接上图：</p>
 <p><img src="/images/digitalocean/ssclient.png" alt=""></p>
 <p>根据图上的指示进行填写，最后点击<strong>OK</strong>，就完成了客户端的配置工作，这时候查看你的右下角显示了小飞机的图标，你就可以科学上网了。</p>
+<h1 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h1><p>到这里使用DigitalOcean服务器的教程就结束了，喜欢的朋友可以添加收藏，之后小编可能会教大家如何使用亚马逊服务器，敬请期待吧(<em>^▽^</em>)！</p>
 
-        <h1 id="结语"   >
-          <a href="#结语" class="heading-link"><i class="fas fa-link"></i></a>结语</h1>
-      <p>到这里使用DigitalOcean服务器的教程就结束了，喜欢的朋友可以添加收藏，之后小编可能会教大家如何使用亚马逊服务器，敬请期待吧(<em>^▽^</em>)！</p>
-</div><footer class="post-footer"><div class="post-ending ending"><div class="ending__text">------ 本文结束，感谢您的阅读 ------</div></div><div class="post-copyright copyright"><div class="copyright-author"><span class="copyright-author__name">本文作者: </span><span class="copyright-author__value"><a href="http://yoursite.com">Yu</a></span></div><div class="copyright-link"><span class="copyright-link__name">本文链接: </span><span class="copyright-link__value"><a href="http://yoursite.com/2019/03/27/digitalocean/">http://yoursite.com/2019/03/27/digitalocean/</a></span></div><div class="copyright-notice"><span class="copyright-notice__name">版权声明: </span><span class="copyright-notice__value">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" rel="external nofollow" target="_blank">BY-NC-SA</a> 许可协议。转载请注明出处！</span></div></div><div class="post-tags"><span class="post-tags-item"><span class="post-tags-item__icon"><i class="fas fa-tag"></i></span><a class="post-tags-item__link" href="http://yoursite.com/tags/digitalocean/">digitalocean</a></span><span class="post-tags-item"><span class="post-tags-item__icon"><i class="fas fa-tag"></i></span><a class="post-tags-item__link" href="http://yoursite.com/tags/%E6%9A%97%E5%BD%B1%E8%A2%9C%E5%AD%90/">暗影袜子</a></span></div><nav class="post-paginator paginator"><div class="paginator-prev"><a class="paginator-prev__link" href="wyprun.github.io/2019/03/28/digitalocean-github/"><span class="paginator-prev__icon"><i class="fas fa-angle-left"></i></span><span class="paginator-prev__text">Digitalocean 使用Github学生优惠码</span></a></div><div class="paginator-next"><a class="paginator-next__link" href="wyprun.github.io/2019/03/27/github-education-tools/"><span class="paginator-prev__text">github education tools 学生优惠申请及使用</span><span class="paginator-next__icon"><i class="fas fa-angle-right"></i></span></a></div></nav></footer></div></div></div><div class="sidebar-wrap" id="sidebar-wrap"><aside class="sidebar" id="sidebar"><div class="sidebar-nav"><span class="sidebar-nav-toc current">文章目录</span><span class="sidebar-nav-ov">站点概览</span></div><section class="sidebar-toc"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#注册账号"><span class="toc-number">1.</span> <span class="toc-text">
-          注册账号</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#创建小水滴-Droplets-服务器"><span class="toc-number">2.</span> <span class="toc-text">
-          创建小水滴(Droplets)服务器</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#选择服务器系统"><span class="toc-number">2.1.</span> <span class="toc-text">
-          选择服务器系统</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#选择付费类型"><span class="toc-number">2.2.</span> <span class="toc-text">
-          选择付费类型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#选择服务器所在地"><span class="toc-number">2.3.</span> <span class="toc-text">
-          选择服务器所在地</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#勾选ipv6"><span class="toc-number">2.4.</span> <span class="toc-text">
-          勾选ipv6</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#添加SSH-可选"><span class="toc-number">2.5.</span> <span class="toc-text">
-          添加SSH(可选)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#修改主机名"><span class="toc-number">2.6.</span> <span class="toc-text">
-          修改主机名</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#修改密码"><span class="toc-number">2.7.</span> <span class="toc-text">
-          修改密码</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#安装并配置暗影袜子"><span class="toc-number">3.</span> <span class="toc-text">
-          安装并配置暗影袜子</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#安装暗影袜子"><span class="toc-number">3.1.</span> <span class="toc-text">
-          安装暗影袜子</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#配置暗影袜子"><span class="toc-number">3.2.</span> <span class="toc-text">
-          配置暗影袜子</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#启动暗影袜子"><span class="toc-number">3.3.</span> <span class="toc-text">
-          启动暗影袜子</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#暗影袜子客户端"><span class="toc-number">4.</span> <span class="toc-text">
-          暗影袜子客户端</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#结语"><span class="toc-number">5.</span> <span class="toc-text">
-          结语</span></a></li></ol></section><!-- ov = overview--><section class="sidebar-ov hide"><div class="sidebar-ov-author"><div class="sidebar-ov-author__avatar"><img class="sidebar-ov-author__avatar_img" src="/images/icons/stun-logo.svg" alt="avatar"></div><p class="sidebar-ov-author__text">hello world</p></div><div class="sidebar-ov-state"><a class="sidebar-ov-state-item sidebar-ov-state-item--posts" href="/archives/"><div class="sidebar-ov-state-item__count">6</div><div class="sidebar-ov-state-item__name">归档</div></a></div><div class="sidebar-ov-cc"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank" rel="noopener" data-popover="知识共享许可协议" data-popover-pos="up"><img src="wyprun.github.io/images/cc-by-nc-sa.svg"></a></div></section><div class="sidebar-reading"><div class="sidebar-reading-info"><span class="sidebar-reading-info__text">你已阅读了 </span><span class="sidebar-reading-info__num">0</span></div><div class="sidebar-reading-line"></div></div></aside></div><div class="clearfix"></div></div></main><footer class="footer" id="footer"><div class="footer-inner"><div><span>Copyright © 2020</span><span class="footer__icon"><i class="fas fa-heart"></i></span><span>Yu</span></div><div><span>由 <a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a> 强力驱动</span><span> v4.2.1</span><span class="footer__devider">|</span><span>主题 - <a href="https://github.com/liuyib/hexo-theme-stun/" title="Stun" target="_blank" rel="noopener">Stun</a></span><span> v2.0.1</span></div></div></footer><div class="loading-bar" id="loading-bar"><div class="loading-bar__progress"></div></div><div class="back2top" id="back2top"><span class="back2top__icon"><i class="fas fa-rocket"></i></span></div></div><script src="https://cdn.jsdelivr.net/npm/jquery@v3.4.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.ui.min.js"></script><script src="wyprun.github.io/js/utils.js?v=2.0.1"></script><script src="wyprun.github.io/js/stun-boot.js?v=2.0.1"></script><script src="wyprun.github.io/js/scroll.js?v=2.0.1"></script><script src="wyprun.github.io/js/header.js?v=2.0.1"></script><script src="wyprun.github.io/js/sidebar.js?v=2.0.1"></script></body></html>
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+      <div>
+        <div id="reward-container">
+  <div>谢谢您的鼓励！</div>
+  <button id="reward-button" disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+
+    
+      
+      
+        
+      
+      <div style="display: inline-block">
+        <img src="wyprun.github.io/images/wechatpay.jpg" alt="Yu 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+      
+      
+        
+      
+      <div style="display: inline-block">
+        <img src="wyprun.github.io/images/alipay.jpg" alt="Yu 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="wyprun.github.io/tags/digitalocean/" rel="tag"># digitalocean</a>
+          
+            <a href="wyprun.github.io/tags/%E6%9A%97%E5%BD%B1%E8%A2%9C%E5%AD%90/" rel="tag"># 暗影袜子</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="wyprun.github.io/2019/03/27/github-education-tools/" rel="next" title="github education tools 学生优惠申请及使用">
+                <i class="fa fa-chevron-left"></i> github education tools 学生优惠申请及使用
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="wyprun.github.io/2019/03/28/digitalocean-github/" rel="prev" title="Digitalocean 使用Github学生优惠码">
+                Digitalocean 使用Github学生优惠码 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="wyprun.github.io/images/me.jpg"
+                alt="Yu"/>
+            
+              <p class="site-author-name" itemprop="name">Yu</p>
+              <div class="site-description motion-element" itemprop="description">谁都想一直是少年</div>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="wyprun.github.io/archives/%20%7C%7C%20archive">
+                
+                    <span class="site-state-item-count">6</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  
+                    
+                      <a href="wyprun.github.io/categories/%20%7C%7C%20th">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">3</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                      <a href="wyprun.github.io/tags/%20%7C%7C%20tags">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">6</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://github.com/wyprun" title="GitHub &amp;rarr; https:&#x2F;&#x2F;github.com&#x2F;wyprun" rel="noopener" target="_blank">&lt;i class&#x3D;&quot;fa fa-fw fa-github&quot;&gt;&lt;&#x2F;i&gt;GitHub</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="mailto:wyp_14@tju.edu.cn" title="E-Mail &amp;rarr; mailto:wyp_14@tju.edu.cn" rel="noopener" target="_blank">&lt;i class&#x3D;&quot;fa fa-fw fa-envelope&quot;&gt;&lt;&#x2F;i&gt;E-Mail</a>
+                </span>
+              
+            </div>
+          
+
+          
+             <div class="cc-license motion-element" itemprop="license">
+              
+              
+                
+              
+              
+              
+              <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank">&lt;img src&#x3D;&quot;wyprun.github.io&#x2F;images&#x2F;cc-by-nc-sa.svg&quot; alt&#x3D;&quot;Creative Commons&quot;&#x2F;&gt;</a>
+             </div>
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                Links
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://yunhao.space/" title="https:&#x2F;&#x2F;yunhao.space&#x2F;" rel="noopener" target="_blank">Andylmns</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://wazxser.github.io/" title="https:&#x2F;&#x2F;wazxser.github.io&#x2F;" rel="noopener" target="_blank">Moon</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+            
+          
+          
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+  <script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+  <script src="//cdn.bootcss.com/blueimp-md5/1.1.0/js/md5.min.js"></script>
+  <script>
+      var gitalk = new Gitalk({
+        clientID: 'df7ed995d23c34ba257a',
+        clientSecret: '4ea89d220eb95f87a3a525b1acabc0a66ddbac42',
+        repo: 'wyprun.github.io',
+        owner: 'wyprun',
+        admin: 'wyprun',
+        id: md5(location.pathname),
+        distractionFreeMode: 'true'
+      });
+      var div = document.createElement('div');
+      div.setAttribute("id", "gitalk_comments");
+      div.setAttribute("class", "post-nav");
+      var bro = document.getElementById('posts').getElementsByTagName('article');
+      bro = bro[0].getElementsByClassName('post-block');
+      bro = bro[0].getElementsByTagName('footer');
+      bro = bro[0];
+      bro.appendChild(div);
+      gitalk.render('gitalk_comments');
+  </script>
+
+        </div>
+      </div>
+
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#注册账号"><span class="nav-number">1.</span> <span class="nav-text">注册账号</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#创建小水滴-Droplets-服务器"><span class="nav-number">2.</span> <span class="nav-text">创建小水滴(Droplets)服务器</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#选择服务器系统"><span class="nav-number">2.1.</span> <span class="nav-text">选择服务器系统</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#选择付费类型"><span class="nav-number">2.2.</span> <span class="nav-text">选择付费类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#选择服务器所在地"><span class="nav-number">2.3.</span> <span class="nav-text">选择服务器所在地</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#勾选ipv6"><span class="nav-number">2.4.</span> <span class="nav-text">勾选ipv6</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#添加SSH-可选"><span class="nav-number">2.5.</span> <span class="nav-text">添加SSH(可选)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#修改主机名"><span class="nav-number">2.6.</span> <span class="nav-text">修改主机名</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#修改密码"><span class="nav-number">2.7.</span> <span class="nav-text">修改密码</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装并配置暗影袜子"><span class="nav-number">3.</span> <span class="nav-text">安装并配置暗影袜子</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装暗影袜子"><span class="nav-number">3.1.</span> <span class="nav-text">安装暗影袜子</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置暗影袜子"><span class="nav-number">3.2.</span> <span class="nav-text">配置暗影袜子</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#启动暗影袜子"><span class="nav-number">3.3.</span> <span class="nav-text">启动暗影袜子</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#暗影袜子客户端"><span class="nav-number">4.</span> <span class="nav-text">暗影袜子客户端</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#结语"><span class="nav-number">5.</span> <span class="nav-text">结语</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
+
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
+      
+
+    </div>
+  </aside>
+  
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2019 – <span itemprop="copyrightYear">2020</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Yu</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+    <span title="站点总字数"></span>
+  
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    
+    <span title="站点阅读时长"></span>
+  
+</div>
+
+
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v4.2.1</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 – <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.0.1</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+    
+    
+  
+  <script color='0,0,255' opacity='0.5' zIndex='-1' count='99' src="wyprun.github.io/lib/canvas-nest/canvas-nest.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script src="wyprun.github.io/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script src="wyprun.github.io/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="wyprun.github.io/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script src="wyprun.github.io/lib/fancybox/source/jquery.fancybox.pack.js"></script>
+
+  
+  <script src="wyprun.github.io/lib/reading_progress/reading_progress.js"></script>
+
+
+  
+
+
+  <script src="wyprun.github.io/js/src/utils.js?v=7.0.1"></script>
+
+  <script src="wyprun.github.io/js/src/motion.js?v=7.0.1"></script>
+
+
+
+  
+  
+
+
+  <script src="wyprun.github.io/js/src/affix.js?v=7.0.1"></script>
+
+  <script src="wyprun.github.io/js/src/schemes/pisces.js?v=7.0.1"></script>
+
+
+
+
+  
+  <script src="wyprun.github.io/js/src/scrollspy.js?v=7.0.1"></script>
+<script src="wyprun.github.io/js/src/post-details.js?v=7.0.1"></script>
+
+
+
+  
+
+
+  <script src="wyprun.github.io/js/src/next-boot.js?v=7.0.1"></script>
+
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+
+  
+  <script>
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "wyprun.github.io/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url).replace(/\/{2,}/g, '/');
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x"></i></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x"></i></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+  
+  <script>
+    
+    function addCount(Counter) {
+      var $visitors = $('.leancloud_visitors');
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+
+      Counter('get', '/classes/Counter', { where: JSON.stringify({ url }) })
+        .done(function({ results }) {
+          if (results.length > 0) {
+            var counter = results[0];
+            
+            Counter('put', '/classes/Counter/' + counter.objectId, JSON.stringify({ time: { '__op': 'Increment', 'amount': 1 } }))
+            
+              .done(function() {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.time + 1);
+              })
+            
+              .fail(function ({ responseJSON }) {
+                console.log('Failed to save Visitor num, with error message: ' + responseJSON.error);
+              })
+          } else {
+            
+              var $element = $(document.getElementById(url));
+              $element.find('.leancloud-visitors-count').text('Counter not initialized! More info at console err msg.');
+              console.error('ATTENTION! LeanCloud counter has security bug, see how to solve it here: https://github.com/theme-next/hexo-leancloud-counter-security. \n However, you can still use LeanCloud without security, by setting `security` option to `false`.');
+            
+          }
+        })
+        .fail(function ({ responseJSON }) {
+          console.log('LeanCloud Counter Error: ' + responseJSON.code + ' ' + responseJSON.error);
+        });
+    }
+    
+
+    $(function() {
+      $.get('https://app-router.leancloud.cn/2/route?appId=' + '3fGaxGazaBXkRLCqgNY9S9mq-gzGzoHsz')
+        .done(function({ api_server }) {
+          var Counter = function(method, url, data) {
+            return $.ajax({
+              method: method,
+              url: 'https://' + api_server + '/1.1' + url,
+              headers: {
+                'X-LC-Id': '3fGaxGazaBXkRLCqgNY9S9mq-gzGzoHsz',
+                'X-LC-Key': 'YTAP53Yb2LaqWy6k4QrjRRhO',
+                'Content-Type': 'application/json',
+              },
+              data: data
+            });
+          };
+          
+            addCount(Counter);
+          
+        });
+    });
+  </script>
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

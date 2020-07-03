@@ -1,4 +1,121 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="icon" href="wyprun.github.io/images/icons/favicon-16x16.png?v=2.0.1" type="image/png" sizes="16x16"><link rel="icon" href="wyprun.github.io/images/icons/favicon-32x32.png?v=2.0.1" type="image/png" sizes="32x32"><meta name="description" content="想必你已经知道Hexo 是高效的静态站点生成框架，基于 Node.js。 使用 Markdown 编写文章，除了 Markdown 本身的语法之外，还可以使用 Hexo 提供的 标签插件 来快速的插入特定形式的内容。 在之前的博客中，我们已经使用Hexo+github搭建起了自己的博客，但是我们也不难发现，默认的hexo主题比较丑，如何使用好看的hexo主题呢，这篇博客就告诉大家如何切换hexo主">
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<meta name="theme-color" content="#222"/>
+
+
+
+
+  
+  
+    
+    
+  <script src="wyprun.github.io/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link rel="stylesheet" href="wyprun.github.io/lib/pace/pace-theme-corner-indicator.min.css?v=1.0.2"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link rel="stylesheet" href="wyprun.github.io/lib/fancybox/source/jquery.fancybox.css"/>
+
+
+
+
+
+
+
+<link rel="stylesheet" href="wyprun.github.io/lib/font-awesome/css/font-awesome.min.css?v=4.6.2"/>
+
+<link rel="stylesheet" href="wyprun.github.io/css/main.css?v=7.0.1"/>
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="wyprun.github.io/images/apple-touch-icon-next.png?v=7.0.1">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="wyprun.github.io/images/me.ico?v=7.0.1">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="wyprun.github.io/images/favicon-16x16-next.png?v=7.0.1">
+
+
+  <link rel="mask-icon" href="wyprun.github.io/images/logo.svg?v=7.0.1" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: 'wyprun.github.io/',
+    scheme: 'Gemini',
+    version: '7.0.1',
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false,"dimmer":false},
+    back2top: true,
+    back2top_sidebar: true,
+    fancybox: true,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+	<script>
+		(function(i,s,o,g,r,a,m){i["DaoVoiceObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;a.charset="utf-8";m.parentNode.insertBefore(a,m)})(window,document,"script",('https:' == document.location.protocol ? 'https:' : 'http:') + "//widget.daovoice.io/widget/c96195cd.js","daovoice")
+		daovoice('init', {
+			app_id: "c96195cd"
+		});
+		daovoice('update');
+	</script>
+
+
+  <meta name="description" content="想必你已经知道Hexo 是高效的静态站点生成框架，基于 Node.js。 使用 Markdown 编写文章，除了 Markdown 本身的语法之外，还可以使用 Hexo 提供的 标签插件 来快速的插入特定形式的内容。 在之前的博客中，我们已经使用Hexo+github搭建起了自己的博客，但是我们也不难发现，默认的hexo主题比较丑，如何使用好看的hexo主题呢，这篇博客就告诉大家如何切换hexo主">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo安装NexT主题，并简单配置">
 <meta property="og:url" content="http://yoursite.com/2019/03/29/hexo-next-1/index.html">
@@ -12,43 +129,469 @@
 <meta property="article:tag" content="hexo">
 <meta property="article:tag" content="NexT">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://yoursite.com/images/hexo-next/localhost.png"><meta name="keywords" content="Yu, wyp"><meta name="description" content="谁都想一直是少年"><title>Hexo安装NexT主题，并简单配置 | wyp</title><link ref="canonical" href="http://yoursite.com/2019/03/29/hexo-next-1/"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.1/css/all.min.css" type="text/css"><link rel="stylesheet" href="wyprun.github.io/css/index.css?v=2.0.1"><script>var Stun = window.Stun || {};
-var CONFIG = {
-  root: 'wyprun.github.io/',
-  algolia: undefined,
-  fontIcon: {"prompt":{"success":"fas fa-check-circle","info":"fas fa-arrow-circle-right","warning":"fas fa-exclamation-circle","error":"fas fa-times-circle"},"copyBtn":"fas fa-copy"},
-  sidebar: {"offsetTop":"20px","tocMaxDepth":6},
-  header: {"enable":true,"showOnPost":true,"scrollDownIcon":false},
-  postWidget: {"endText":true},
-  nightMode: {"enable":true},
-  back2top: {"enable":true},
-  codeblock: {"style":"default","highlight":"light","wordWrap":false},
-  reward: false,
-  fancybox: false,
-  zoomImage: {"gapAside":"20px"},
-  galleryWaterfall: undefined,
-  lazyload: false,
-  pjax: undefined,
-  externalLink: {"icon":{"enable":true,"name":"fas fa-external-link-alt"}},
-  shortcuts: undefined,
-  prompt: {"copyButton":"复制","copySuccess":"复制成功","copyError":"复制失败"},
-  sourcePath: {"js":"js","css":"css","images":"images"},
-};
+<meta name="twitter:image" content="http://yoursite.com/images/hexo-next/localhost.png">
 
-window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 4.2.1"></head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner"><nav class="header-nav header-nav--fixed"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">首页</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/archives/"><span class="header-nav-menu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-menu-item__text">归档</span></a></div></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav><div class="header-banner"><div class="header-banner-info"><div class="header-banner-info__title">wyp</div><div class="header-banner-info__subtitle"></div></div></div></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content" id="content"><!-- Just used to judge whether it is an article page--><div id="is-post"></div><div class="post"><header class="post-header"><h1 class="post-title">Hexo安装NexT主题，并简单配置</h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2019-03-29</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2020-07-03</span></span></div></header><div class="post-body"><p>想必你已经知道Hexo 是高效的静态站点生成框架，基于 Node.js。 使用 Markdown 编写文章，除了 Markdown 本身的语法之外，还可以使用 Hexo 提供的 <span class="exturl"><a class="exturl__link"   href="https://hexo.io/zh-cn/docs/tag-plugins.html"  target="_blank" rel="noopener">标签插件</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span> 来快速的插入特定形式的内容。</p>
+
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2019/03/29/hexo-next-1/"/>
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>Hexo安装NexT主题，并简单配置 | wyp</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="wyprun.github.io/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">wyp</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="wyprun.github.io/" rel="section">&lt;i class&#x3D;&quot;menu-item-icon fa fa-fw fa-home&quot;&gt;&lt;&#x2F;i&gt; &lt;br&#x2F;&gt;首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="wyprun.github.io/about/" rel="section">&lt;i class&#x3D;&quot;menu-item-icon fa fa-fw fa-user&quot;&gt;&lt;&#x2F;i&gt; &lt;br&#x2F;&gt;关于</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="wyprun.github.io/tags/" rel="section">&lt;i class&#x3D;&quot;menu-item-icon fa fa-fw fa-tags&quot;&gt;&lt;&#x2F;i&gt; &lt;br&#x2F;&gt;标签&lt;span class&#x3D;&quot;badge&quot;&gt;6&lt;&#x2F;span&gt;</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="wyprun.github.io/categories/" rel="section">&lt;i class&#x3D;&quot;menu-item-icon fa fa-fw fa-th&quot;&gt;&lt;&#x2F;i&gt; &lt;br&#x2F;&gt;分类&lt;span class&#x3D;&quot;badge&quot;&gt;3&lt;&#x2F;span&gt;</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="wyprun.github.io/archives/" rel="section">&lt;i class&#x3D;&quot;menu-item-icon fa fa-fw fa-archive&quot;&gt;&lt;&#x2F;i&gt; &lt;br&#x2F;&gt;归档&lt;span class&#x3D;&quot;badge&quot;&gt;6&lt;&#x2F;span&gt;</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-commonweal">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="wyprun.github.io/404/" rel="section">&lt;i class&#x3D;&quot;menu-item-icon fa fa-fw fa-heartbeat&quot;&gt;&lt;&#x2F;i&gt; &lt;br&#x2F;&gt;公益 404</a>
+
+  </li>
+
+      
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br/>搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+  
+  
+  
+  
+
+  
+
+  <a href="https://github.com/wyprun" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank">&lt;svg width&#x3D;&quot;80&quot; height&#x3D;&quot;80&quot; viewBox&#x3D;&quot;0 0 250 250&quot; style&#x3D;&quot;fill: #222; color: #fff; position: absolute; top: 0; border: 0; right: 0;&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;path d&#x3D;&quot;M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z&quot;&gt;&lt;&#x2F;path&gt;&lt;path d&#x3D;&quot;M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2&quot; fill&#x3D;&quot;currentColor&quot; style&#x3D;&quot;transform-origin: 130px 106px;&quot; class&#x3D;&quot;octo-arm&quot;&gt;&lt;&#x2F;path&gt;&lt;path d&#x3D;&quot;M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z&quot; fill&#x3D;&quot;currentColor&quot; class&#x3D;&quot;octo-body&quot;&gt;&lt;&#x2F;path&gt;&lt;&#x2F;svg&gt;</a>
+
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+    <div class="reading-progress-bar"></div>
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.comwyprun.github.io/2019/03/29/hexo-next-1/"/>
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Yu"/>
+      <meta itemprop="description" content="谁都想一直是少年"/>
+      <meta itemprop="image" content="wyprun.github.io/images/me.jpg"/>
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="wyp"/>
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Hexo安装NexT主题，并简单配置
+
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-03-29 09:39:24" itemprop="dateCreated datePublished" datetime="2019-03-29T09:39:24+08:00">2019-03-29</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2020-07-03 18:21:24" itemprop="dateModified" datetime="2020-07-03T18:21:24+08:00">2020-07-03</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="wyprun.github.io/categories/hexo/" itemprop="url" rel="index"><span itemprop="name">hexo</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+            <span id="wyprun.github.io/2019/03/29/hexo-next-1/" class="leancloud_visitors" data-flag-title="Hexo安装NexT主题，并简单配置">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              
+                <span class="post-meta-item-text">阅读次数：</span>
+              
+                <span class="leancloud-visitors-count"></span>
+            </span>
+          
+
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
+                
+                <span title="本文字数"></span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长"></span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>想必你已经知道Hexo 是高效的静态站点生成框架，基于 Node.js。 使用 Markdown 编写文章，除了 Markdown 本身的语法之外，还可以使用 Hexo 提供的 <a href="https://hexo.io/zh-cn/docs/tag-plugins.html" target="_blank" rel="noopener">标签插件</a> 来快速的插入特定形式的内容。</p>
 <p>在之前的博客中，我们已经使用Hexo+github搭建起了自己的博客，但是我们也不难发现，默认的hexo主题比较丑，如何使用好看的hexo主题呢，这篇博客就告诉大家如何切换hexo主题，并进行简单的配置操作，以NexT主题为例。</p>
 <p>在 Hexo 中有两份主要的配置文件，其名称都是 <code>_config.yml</code>。 一份位于站点根目录下，主要包含 Hexo 本身的配置，称为 <strong>站点配置文件</strong>；另一份位于主题目录下，这份配置由主题作者提供，主要用于配置主题相关的选项，称为 <strong>主题配置文件</strong>。<a id="more"></a></p>
-<p>首先还是向大家提供一个NexT的<span class="exturl"><a class="exturl__link"   href="http://theme-next.iissnan.com/getting-started.html"  target="_blank" rel="noopener">使用文档</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>，这里讲解了NexT的使用方法和主题配置等大多数问题，缺点是该文档对应的版本比较低，在新的版本中有的内容已经不太适用，你可以参考本篇博客进行相应的更改，废话不多说，进入主题。</p>
-
-        <h1 id="安装NexT"   >
-          <a href="#安装NexT" class="heading-link"><i class="fas fa-link"></i></a>安装NexT</h1>
-      <p>Hexo 安装主题的方式很简单，只需要将主题文件下载拷贝至站点目录的 <code>themes</code> 目录下， 然后修改配置文件即可。步骤如下：</p>
-
-        <h2 id="下载主题"   >
-          <a href="#下载主题" class="heading-link"><i class="fas fa-link"></i></a>下载主题</h2>
-      <p>提供给大家NexT的github地址：<span class="exturl"><a class="exturl__link"   href="https://github.com/theme-next/hexo-theme-next"  target="_blank" rel="noopener">https://github.com/theme-next/hexo-theme-next</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>，这里讲述了如何下载，也附有很多NexT的插件地址，大家今后可能会经常用到。首先切换到你的<strong>博客目录</strong>，使用git下载：</p>
+<p>首先还是向大家提供一个NexT的<a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="noopener">使用文档</a>，这里讲解了NexT的使用方法和主题配置等大多数问题，缺点是该文档对应的版本比较低，在新的版本中有的内容已经不太适用，你可以参考本篇博客进行相应的更改，废话不多说，进入主题。</p>
+<h1 id="安装NexT"><a href="#安装NexT" class="headerlink" title="安装NexT"></a>安装NexT</h1><p>Hexo 安装主题的方式很简单，只需要将主题文件下载拷贝至站点目录的 <code>themes</code> 目录下， 然后修改配置文件即可。步骤如下：</p>
+<h2 id="下载主题"><a href="#下载主题" class="headerlink" title="下载主题"></a>下载主题</h2><p>提供给大家NexT的github地址：<a href="https://github.com/theme-next/hexo-theme-next" target="_blank" rel="noopener">https://github.com/theme-next/hexo-theme-next</a>，这里讲述了如何下载，也附有很多NexT的插件地址，大家今后可能会经常用到。首先切换到你的<strong>博客目录</strong>，使用git下载：</p>
 <blockquote>
-<p>$ git clone <span class="exturl"><a class="exturl__link"   href="https://github.com/theme-next/hexo-theme-next"  target="_blank" rel="noopener">https://github.com/theme-next/hexo-theme-next</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span> themes/next</p>
+<p>$ git clone <a href="https://github.com/theme-next/hexo-theme-next" target="_blank" rel="noopener">https://github.com/theme-next/hexo-theme-next</a> themes/next</p>
 </blockquote>
 <p>这是使用https协议下载，如果你遇到文件过大无法下载，可能是跟你的网络有关，也有可能需要进行配置一下文件传输的命令，小编忘记截图，先提供一下解决命令：</p>
 <blockquote>
@@ -56,25 +599,16 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 4.2.1"></he
 </blockquote>
 <p>如果这次配置还无法解决，你还可以使用SSH协议进行下载文件：</p>
 <blockquote>
-<p>$ git clone <span class="exturl"><a class="exturl__link"   href="mailto:git@github.com" >git@github.com</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>:theme-next/hexo-theme-next.git themes/next</p>
+<p>$ git clone <a href="mailto:git@github.com">git@github.com</a>:theme-next/hexo-theme-next.git themes/next</p>
 </blockquote>
-
-        <h2 id="启动主题"   >
-          <a href="#启动主题" class="heading-link"><i class="fas fa-link"></i></a>启动主题</h2>
-      <p>启动主题比较简单，当你下载完主题之后，打开 <strong>站点配置文件</strong>， 找到 <code>theme</code> 字段，并将其值更改为 <code>next</code>。</p>
+<h2 id="启动主题"><a href="#启动主题" class="headerlink" title="启动主题"></a>启动主题</h2><p>启动主题比较简单，当你下载完主题之后，打开 <strong>站点配置文件</strong>， 找到 <code>theme</code> 字段，并将其值更改为 <code>next</code>。</p>
 <blockquote>
 <p>theme:  next</p>
 </blockquote>
 <p>到此，NexT 主题安装完成。我们来验证一下，首先使用 <code>hexo clean</code> 清除缓存，再使用<code>hexo server</code>开启本地模式，之后在浏览器输入<code>localhost:4000</code>查看是否安装成功。</p>
 <p><img src="/images/hexo-next/localhost.png" alt=""></p>
 <p>你的和我的不一样很正常，因为我已经进行了很多配置的修改。下面我们进行一些简单的主题配置和修改。</p>
-
-        <h1 id="主题配置"   >
-          <a href="#主题配置" class="heading-link"><i class="fas fa-link"></i></a>主题配置</h1>
-      
-        <h2 id="选择-Scheme"   >
-          <a href="#选择-Scheme" class="heading-link"><i class="fas fa-link"></i></a>选择 Scheme</h2>
-      <p>Scheme 是 NexT 提供的一种特性，借助于 Scheme，NexT 提供四种不同的外观，几乎所有的配置都可以 在 Scheme 之间共用。分别是：</p>
+<h1 id="主题配置"><a href="#主题配置" class="headerlink" title="主题配置"></a>主题配置</h1><h2 id="选择-Scheme"><a href="#选择-Scheme" class="headerlink" title="选择 Scheme"></a>选择 Scheme</h2><p>Scheme 是 NexT 提供的一种特性，借助于 Scheme，NexT 提供四种不同的外观，几乎所有的配置都可以 在 Scheme 之间共用。分别是：</p>
 <ul>
 <li>Muse - 默认 Scheme，这是 NexT 最初的版本，黑白主调，大量留白</li>
 <li>Mist - Muse 的紧凑版本，整洁有序的单栏外观</li>
@@ -83,15 +617,12 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 4.2.1"></he
 </ul>
 <p>Scheme 的切换通过更改 <strong>主题配置文件</strong>，搜索 scheme 关键字。 会找到四行 scheme 的配置，将 scheme 前面的注释 <code>#</code> 去除即可使用对应的主题风格。</p>
 <p>选定了相应的主题风格后，还有一些对应的设置进行修改，也就算是自定的部分，该部分你可以通过查看主题配置文件中的注释，进行相应的修改，在这里不做赘述。</p>
-
-        <h2 id="设置语言"   >
-          <a href="#设置语言" class="heading-link"><i class="fas fa-link"></i></a>设置语言</h2>
-      <p>编辑 <strong>站点配置文件</strong>， 将 <code>language</code> 设置成你所需要的语言。例如选用简体中文，配置如下：</p>
+<h2 id="设置语言"><a href="#设置语言" class="headerlink" title="设置语言"></a>设置语言</h2><p>编辑 <strong>站点配置文件</strong>， 将 <code>language</code> 设置成你所需要的语言。例如选用简体中文，配置如下：</p>
 <blockquote>
 <p>language: zh-CN</p>
 </blockquote>
 <p>这里注意大小写，这里大小写敏感。在之前的版本简体中文是<code>zh-Hans</code>，最近的版本中已经改成了<code>zh-CN</code>。你也可以查看<code>themes-&gt;next-&gt;languages</code>里面的<code>.yml</code>文件的名称，进行设置你所需要的语言，在使用文档中提供了如下对应表格，除了简体中文改变外，其他的应该没啥大区别，没有尝试，读者可自行尝试：</p>
-<div class="table-container"><table>
+<table>
 <thead>
 <tr>
 <th align="center">语言</th>
@@ -149,23 +680,17 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 4.2.1"></he
 <td align="center">ko</td>
 <td align="center">language: ko</td>
 </tr>
-</tbody></table></div>
-
-        <h2 id="设置菜单"   >
-          <a href="#设置菜单" class="heading-link"><i class="fas fa-link"></i></a>设置菜单</h2>
-      <p>菜单配置包括三个部分，第一是菜单项（名称和链接），第二是菜单项的显示文本，第三是菜单项对应的图标。 NexT 使用的是 <span class="exturl"><a class="exturl__link"   href="http://fontawesome.io/"  target="_blank" rel="noopener">Font Awesome</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span> 提供的图标， Font Awesome 提供了 600+ 的矢量图，可以满足绝大的多数的场景。</p>
-
-        <h3 id="菜单显示"   >
-          <a href="#菜单显示" class="heading-link"><i class="fas fa-link"></i></a>菜单显示</h3>
-      <p>编辑<strong>主题配置文件</strong>，根据你的需要去掉注释符<code>#</code>进行修改。</p>
+</tbody></table>
+<h2 id="设置菜单"><a href="#设置菜单" class="headerlink" title="设置菜单"></a>设置菜单</h2><p>菜单配置包括三个部分，第一是菜单项（名称和链接），第二是菜单项的显示文本，第三是菜单项对应的图标。 NexT 使用的是 <a href="http://fontawesome.io/" target="_blank" rel="noopener">Font Awesome</a> 提供的图标， Font Awesome 提供了 600+ 的矢量图，可以满足绝大的多数的场景。</p>
+<h3 id="菜单显示"><a href="#菜单显示" class="headerlink" title="菜单显示"></a>菜单显示</h3><p>编辑<strong>主题配置文件</strong>，根据你的需要去掉注释符<code>#</code>进行修改。</p>
 <p>设定菜单内容，对应的字段是 <code>menu</code>。 菜单内容的设置格式是：<code>item name: link || icon</code>。其中 <code>item name</code>是一个名称，这个名称并不直接显示在页面上，她将用于匹配翻译；<code>||</code>后的<code>icon</code>是该menu对应的图标，需要在下面的<code>menu_settings</code>中设置是否开启：</p>
 <blockquote>
 <p>menu:<br> home: / || home<br> about: /about/ || user<br> tags: /tags/ || tags<br> categories: /categories/ || th<br> archives: /archives/ || archive<br> #schedule: /schedule/ || calendar<br> #sitemap: /sitemap.xml || sitemap<br> commonweal: /404/ || heartbeat</p>
 <p>Enable/Disable menu icons / item badges.</p>
 <p>menu_settings:<br> icons: true<br> badges: true</p>
 </blockquote>
-<p>在<span class="exturl"><a class="exturl__link"   href="http://theme-next.iissnan.com/getting-started.html"  target="_blank" rel="noopener">使用文档</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>中也提供了一份对应菜单项的表格（标注 <strong>!</strong>的项表示需要手动创建这个页面）：</p>
-<div class="table-container"><table>
+<p>在<a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="noopener">使用文档</a>中也提供了一份对应菜单项的表格（标注 <strong>!</strong>的项表示需要手动创建这个页面）：</p>
+<table>
 <thead>
 <tr>
 <th>键值</th>
@@ -203,19 +728,13 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 4.2.1"></he
 <td>commonweal: /404.html</td>
 <td>公益 404 <strong>!</strong></td>
 </tr>
-</tbody></table></div>
-
-        <h3 id="菜单文本"   >
-          <a href="#菜单文本" class="heading-link"><i class="fas fa-link"></i></a>菜单文本</h3>
-      <p>设置菜单项的显示文本。在第一步中设置的菜单的名称并不直接用于界面上的展示。Hexo 在生成的时候将使用这个名称查找对应的语言翻译，并提取显示文本。这些翻译文本放置在 NexT 主题目录下的 <code>languages/{language}.yml</code> （<code>{language}</code> 为你所使用的语言）。</p>
+</tbody></table>
+<h3 id="菜单文本"><a href="#菜单文本" class="headerlink" title="菜单文本"></a>菜单文本</h3><p>设置菜单项的显示文本。在第一步中设置的菜单的名称并不直接用于界面上的展示。Hexo 在生成的时候将使用这个名称查找对应的语言翻译，并提取显示文本。这些翻译文本放置在 NexT 主题目录下的 <code>languages/{language}.yml</code> （<code>{language}</code> 为你所使用的语言）。</p>
 <p>以简体中文为例，若你需要添加一个菜单项，比如 <code>something</code>。那么就需要修改简体中文对应的翻译文件 <code>languages/zh-CN.yml</code>，在 <code>menu</code> 字段下添加一项：</p>
 <blockquote>
 <p>menu:<br> home: 首页<br> archives: 归档<br> categories: 分类<br> tags: 标签<br> about: 关于<br> search: 搜索<br> commonweal: 公益404<br> <strong>something: 有料</strong></p>
 </blockquote>
-
-        <h2 id="设置侧栏sidebar"   >
-          <a href="#设置侧栏sidebar" class="heading-link"><i class="fas fa-link"></i></a>设置侧栏sidebar</h2>
-      <p>默认情况下，侧栏仅在文章页面（拥有目录列表）时才显示。 可以通过修改 <strong>主题配置文件</strong> 中的 <code>sidebar</code> 字段来控制侧栏的行为。侧栏的设置包括两个部分，其一是侧栏的位置， 其二是侧栏显示的时机。</p>
+<h2 id="设置侧栏sidebar"><a href="#设置侧栏sidebar" class="headerlink" title="设置侧栏sidebar"></a>设置侧栏sidebar</h2><p>默认情况下，侧栏仅在文章页面（拥有目录列表）时才显示。 可以通过修改 <strong>主题配置文件</strong> 中的 <code>sidebar</code> 字段来控制侧栏的行为。侧栏的设置包括两个部分，其一是侧栏的位置， 其二是侧栏显示的时机。</p>
 <p>设置侧栏的位置，寻找 <code>sidebar</code> ，该拦下拥有<code>position</code>、<code>display</code>字样，<code>position</code>支持的选项有：</p>
 <ul>
 <li>left - 靠左放置</li>
@@ -229,11 +748,8 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 4.2.1"></he
 <li>remove - 完全移除</li>
 </ul>
 <p>根据你的具体需要进行修改。</p>
-
-        <h2 id="设置头像avatar"   >
-          <a href="#设置头像avatar" class="heading-link"><i class="fas fa-link"></i></a>设置头像avatar</h2>
-      <p>编辑 <strong>主题配置文件</strong>，修改字段 <code>avatar</code>，值设置成头像的链接地址。<span class="exturl"><a class="exturl__link"   href="http://theme-next.iissnan.com/getting-started.html"  target="_blank" rel="noopener">使用文档</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>提供如下列表：</p>
-<div class="table-container"><table>
+<h2 id="设置头像avatar"><a href="#设置头像avatar" class="headerlink" title="设置头像avatar"></a>设置头像avatar</h2><p>编辑 <strong>主题配置文件</strong>，修改字段 <code>avatar</code>，值设置成头像的链接地址。<a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="noopener">使用文档</a>提供如下列表：</p>
+<table>
 <thead>
 <tr>
 <th>地址</th>
@@ -248,39 +764,941 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 4.2.1"></he
 <td>站点内的地址</td>
 <td>将头像放置主题目录下的 <code>source/images/</code> （新建 images 目录若不存在）  配置为：<code>avatar: /images/avatar.png</code>或者 放置在 <code>source/images/</code> 目录下  配置为：<code>avatar: /images/avatar.png</code></td>
 </tr>
-</tbody></table></div>
-
-        <h2 id="设置站点icon"   >
-          <a href="#设置站点icon" class="heading-link"><i class="fas fa-link"></i></a>设置站点icon</h2>
-      <p>编辑 <strong>主题配置文件</strong>，修改字段 <code>favicon</code>，值设置成头像的链接地址。这里需要注意的是<code>small</code>对应的像素必须是16x16，<code>medium</code>对应的像素必须是32x32，否则会失效。</p>
+</tbody></table>
+<h2 id="设置站点icon"><a href="#设置站点icon" class="headerlink" title="设置站点icon"></a>设置站点icon</h2><p>编辑 <strong>主题配置文件</strong>，修改字段 <code>favicon</code>，值设置成头像的链接地址。这里需要注意的是<code>small</code>对应的像素必须是16x16，<code>medium</code>对应的像素必须是32x32，否则会失效。</p>
 <blockquote>
 <p>favicon:<br> small: /images/favicon-16x16-next.png<br> medium: /images/me.ico<br> apple_touch_icon: /images/apple-touch-icon-next.png<br> safari_pinned_tab: /images/logo.svg<br> #android_manifest: /images/manifest.json<br> #ms_browserconfig: /images/browserconfig.xml</p>
 </blockquote>
+<h2 id="设置作者昵称"><a href="#设置作者昵称" class="headerlink" title="设置作者昵称"></a>设置作者昵称</h2><p>编辑 <strong>站点配置文件</strong>， 设置 <code>author</code> 为你的昵称。</p>
+<h2 id="设置站点描述"><a href="#设置站点描述" class="headerlink" title="设置站点描述"></a>设置站点描述</h2><p>编辑 <strong>站点配置文件</strong>， 设置 <code>description</code> 字段为你的站点描述。站点描述可以是你喜欢的一句签名。</p>
+<h1 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h1><p>本篇博客就到这里，还有许多其他的主题配置，将会在接下来的博客中继续更新，敬请期待！</p>
 
-        <h2 id="设置作者昵称"   >
-          <a href="#设置作者昵称" class="heading-link"><i class="fas fa-link"></i></a>设置作者昵称</h2>
-      <p>编辑 <strong>站点配置文件</strong>， 设置 <code>author</code> 为你的昵称。</p>
+      
+    </div>
 
-        <h2 id="设置站点描述"   >
-          <a href="#设置站点描述" class="heading-link"><i class="fas fa-link"></i></a>设置站点描述</h2>
-      <p>编辑 <strong>站点配置文件</strong>， 设置 <code>description</code> 字段为你的站点描述。站点描述可以是你喜欢的一句签名。</p>
+    
 
-        <h1 id="结语"   >
-          <a href="#结语" class="heading-link"><i class="fas fa-link"></i></a>结语</h1>
-      <p>本篇博客就到这里，还有许多其他的主题配置，将会在接下来的博客中继续更新，敬请期待！</p>
-</div><footer class="post-footer"><div class="post-ending ending"><div class="ending__text">------ 本文结束，感谢您的阅读 ------</div></div><div class="post-copyright copyright"><div class="copyright-author"><span class="copyright-author__name">本文作者: </span><span class="copyright-author__value"><a href="http://yoursite.com">Yu</a></span></div><div class="copyright-link"><span class="copyright-link__name">本文链接: </span><span class="copyright-link__value"><a href="http://yoursite.com/2019/03/29/hexo-next-1/">http://yoursite.com/2019/03/29/hexo-next-1/</a></span></div><div class="copyright-notice"><span class="copyright-notice__name">版权声明: </span><span class="copyright-notice__value">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" rel="external nofollow" target="_blank">BY-NC-SA</a> 许可协议。转载请注明出处！</span></div></div><div class="post-tags"><span class="post-tags-item"><span class="post-tags-item__icon"><i class="fas fa-tag"></i></span><a class="post-tags-item__link" href="http://yoursite.com/tags/hexo/">hexo</a></span><span class="post-tags-item"><span class="post-tags-item__icon"><i class="fas fa-tag"></i></span><a class="post-tags-item__link" href="http://yoursite.com/tags/NexT/">NexT</a></span></div><nav class="post-paginator paginator"><div class="paginator-prev"><a class="paginator-prev__link" href="wyprun.github.io/2020/07/03/hello-world/"><span class="paginator-prev__icon"><i class="fas fa-angle-left"></i></span><span class="paginator-prev__text">Hello World</span></a></div><div class="paginator-next"><a class="paginator-next__link" href="wyprun.github.io/2019/03/28/digitalocean-github/"><span class="paginator-prev__text">Digitalocean 使用Github学生优惠码</span><span class="paginator-next__icon"><i class="fas fa-angle-right"></i></span></a></div></nav></footer></div></div></div><div class="sidebar-wrap" id="sidebar-wrap"><aside class="sidebar" id="sidebar"><div class="sidebar-nav"><span class="sidebar-nav-toc current">文章目录</span><span class="sidebar-nav-ov">站点概览</span></div><section class="sidebar-toc"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#安装NexT"><span class="toc-number">1.</span> <span class="toc-text">
-          安装NexT</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#下载主题"><span class="toc-number">1.1.</span> <span class="toc-text">
-          下载主题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#启动主题"><span class="toc-number">1.2.</span> <span class="toc-text">
-          启动主题</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#主题配置"><span class="toc-number">2.</span> <span class="toc-text">
-          主题配置</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#选择-Scheme"><span class="toc-number">2.1.</span> <span class="toc-text">
-          选择 Scheme</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#设置语言"><span class="toc-number">2.2.</span> <span class="toc-text">
-          设置语言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#设置菜单"><span class="toc-number">2.3.</span> <span class="toc-text">
-          设置菜单</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#菜单显示"><span class="toc-number">2.3.1.</span> <span class="toc-text">
-          菜单显示</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#菜单文本"><span class="toc-number">2.3.2.</span> <span class="toc-text">
-          菜单文本</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#设置侧栏sidebar"><span class="toc-number">2.4.</span> <span class="toc-text">
-          设置侧栏sidebar</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#设置头像avatar"><span class="toc-number">2.5.</span> <span class="toc-text">
-          设置头像avatar</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#设置站点icon"><span class="toc-number">2.6.</span> <span class="toc-text">
-          设置站点icon</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#设置作者昵称"><span class="toc-number">2.7.</span> <span class="toc-text">
-          设置作者昵称</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#设置站点描述"><span class="toc-number">2.8.</span> <span class="toc-text">
-          设置站点描述</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#结语"><span class="toc-number">3.</span> <span class="toc-text">
-          结语</span></a></li></ol></section><!-- ov = overview--><section class="sidebar-ov hide"><div class="sidebar-ov-author"><div class="sidebar-ov-author__avatar"><img class="sidebar-ov-author__avatar_img" src="/images/icons/stun-logo.svg" alt="avatar"></div><p class="sidebar-ov-author__text">hello world</p></div><div class="sidebar-ov-state"><a class="sidebar-ov-state-item sidebar-ov-state-item--posts" href="/archives/"><div class="sidebar-ov-state-item__count">6</div><div class="sidebar-ov-state-item__name">归档</div></a></div><div class="sidebar-ov-cc"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank" rel="noopener" data-popover="知识共享许可协议" data-popover-pos="up"><img src="wyprun.github.io/images/cc-by-nc-sa.svg"></a></div></section><div class="sidebar-reading"><div class="sidebar-reading-info"><span class="sidebar-reading-info__text">你已阅读了 </span><span class="sidebar-reading-info__num">0</span></div><div class="sidebar-reading-line"></div></div></aside></div><div class="clearfix"></div></div></main><footer class="footer" id="footer"><div class="footer-inner"><div><span>Copyright © 2020</span><span class="footer__icon"><i class="fas fa-heart"></i></span><span>Yu</span></div><div><span>由 <a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a> 强力驱动</span><span> v4.2.1</span><span class="footer__devider">|</span><span>主题 - <a href="https://github.com/liuyib/hexo-theme-stun/" title="Stun" target="_blank" rel="noopener">Stun</a></span><span> v2.0.1</span></div></div></footer><div class="loading-bar" id="loading-bar"><div class="loading-bar__progress"></div></div><div class="back2top" id="back2top"><span class="back2top__icon"><i class="fas fa-rocket"></i></span></div></div><script src="https://cdn.jsdelivr.net/npm/jquery@v3.4.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.ui.min.js"></script><script src="wyprun.github.io/js/utils.js?v=2.0.1"></script><script src="wyprun.github.io/js/stun-boot.js?v=2.0.1"></script><script src="wyprun.github.io/js/scroll.js?v=2.0.1"></script><script src="wyprun.github.io/js/header.js?v=2.0.1"></script><script src="wyprun.github.io/js/sidebar.js?v=2.0.1"></script></body></html>
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+      <div>
+        <div id="reward-container">
+  <div>谢谢您的鼓励！</div>
+  <button id="reward-button" disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+
+    
+      
+      
+        
+      
+      <div style="display: inline-block">
+        <img src="wyprun.github.io/images/wechatpay.jpg" alt="Yu 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+      
+      
+        
+      
+      <div style="display: inline-block">
+        <img src="wyprun.github.io/images/alipay.jpg" alt="Yu 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="wyprun.github.io/tags/hexo/" rel="tag"># hexo</a>
+          
+            <a href="wyprun.github.io/tags/NexT/" rel="tag"># NexT</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="wyprun.github.io/2019/03/28/digitalocean-github/" rel="next" title="Digitalocean 使用Github学生优惠码">
+                <i class="fa fa-chevron-left"></i> Digitalocean 使用Github学生优惠码
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="wyprun.github.io/2020/07/03/hello-world/" rel="prev" title="Hello World">
+                Hello World <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="wyprun.github.io/images/me.jpg"
+                alt="Yu"/>
+            
+              <p class="site-author-name" itemprop="name">Yu</p>
+              <div class="site-description motion-element" itemprop="description">谁都想一直是少年</div>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="wyprun.github.io/archives/%20%7C%7C%20archive">
+                
+                    <span class="site-state-item-count">6</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  
+                    
+                      <a href="wyprun.github.io/categories/%20%7C%7C%20th">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">3</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                      <a href="wyprun.github.io/tags/%20%7C%7C%20tags">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">6</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://github.com/wyprun" title="GitHub &amp;rarr; https:&#x2F;&#x2F;github.com&#x2F;wyprun" rel="noopener" target="_blank">&lt;i class&#x3D;&quot;fa fa-fw fa-github&quot;&gt;&lt;&#x2F;i&gt;GitHub</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="mailto:wyp_14@tju.edu.cn" title="E-Mail &amp;rarr; mailto:wyp_14@tju.edu.cn" rel="noopener" target="_blank">&lt;i class&#x3D;&quot;fa fa-fw fa-envelope&quot;&gt;&lt;&#x2F;i&gt;E-Mail</a>
+                </span>
+              
+            </div>
+          
+
+          
+             <div class="cc-license motion-element" itemprop="license">
+              
+              
+                
+              
+              
+              
+              <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank">&lt;img src&#x3D;&quot;wyprun.github.io&#x2F;images&#x2F;cc-by-nc-sa.svg&quot; alt&#x3D;&quot;Creative Commons&quot;&#x2F;&gt;</a>
+             </div>
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                Links
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://yunhao.space/" title="https:&#x2F;&#x2F;yunhao.space&#x2F;" rel="noopener" target="_blank">Andylmns</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://wazxser.github.io/" title="https:&#x2F;&#x2F;wazxser.github.io&#x2F;" rel="noopener" target="_blank">Moon</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+            
+          
+          
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+  <script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+  <script src="//cdn.bootcss.com/blueimp-md5/1.1.0/js/md5.min.js"></script>
+  <script>
+      var gitalk = new Gitalk({
+        clientID: 'df7ed995d23c34ba257a',
+        clientSecret: '4ea89d220eb95f87a3a525b1acabc0a66ddbac42',
+        repo: 'wyprun.github.io',
+        owner: 'wyprun',
+        admin: 'wyprun',
+        id: md5(location.pathname),
+        distractionFreeMode: 'true'
+      });
+      var div = document.createElement('div');
+      div.setAttribute("id", "gitalk_comments");
+      div.setAttribute("class", "post-nav");
+      var bro = document.getElementById('posts').getElementsByTagName('article');
+      bro = bro[0].getElementsByClassName('post-block');
+      bro = bro[0].getElementsByTagName('footer');
+      bro = bro[0];
+      bro.appendChild(div);
+      gitalk.render('gitalk_comments');
+  </script>
+
+        </div>
+      </div>
+
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#安装NexT"><span class="nav-number">1.</span> <span class="nav-text">安装NexT</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#下载主题"><span class="nav-number">1.1.</span> <span class="nav-text">下载主题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#启动主题"><span class="nav-number">1.2.</span> <span class="nav-text">启动主题</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#主题配置"><span class="nav-number">2.</span> <span class="nav-text">主题配置</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#选择-Scheme"><span class="nav-number">2.1.</span> <span class="nav-text">选择 Scheme</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#设置语言"><span class="nav-number">2.2.</span> <span class="nav-text">设置语言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#设置菜单"><span class="nav-number">2.3.</span> <span class="nav-text">设置菜单</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#菜单显示"><span class="nav-number">2.3.1.</span> <span class="nav-text">菜单显示</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#菜单文本"><span class="nav-number">2.3.2.</span> <span class="nav-text">菜单文本</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#设置侧栏sidebar"><span class="nav-number">2.4.</span> <span class="nav-text">设置侧栏sidebar</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#设置头像avatar"><span class="nav-number">2.5.</span> <span class="nav-text">设置头像avatar</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#设置站点icon"><span class="nav-number">2.6.</span> <span class="nav-text">设置站点icon</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#设置作者昵称"><span class="nav-number">2.7.</span> <span class="nav-text">设置作者昵称</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#设置站点描述"><span class="nav-number">2.8.</span> <span class="nav-text">设置站点描述</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#结语"><span class="nav-number">3.</span> <span class="nav-text">结语</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
+
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
+      
+
+    </div>
+  </aside>
+  
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2019 – <span itemprop="copyrightYear">2020</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Yu</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+    <span title="站点总字数"></span>
+  
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    
+    <span title="站点阅读时长"></span>
+  
+</div>
+
+
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v4.2.1</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 – <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.0.1</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+    
+    
+  
+  <script color='0,0,255' opacity='0.5' zIndex='-1' count='99' src="wyprun.github.io/lib/canvas-nest/canvas-nest.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script src="wyprun.github.io/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script src="wyprun.github.io/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="wyprun.github.io/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script src="wyprun.github.io/lib/fancybox/source/jquery.fancybox.pack.js"></script>
+
+  
+  <script src="wyprun.github.io/lib/reading_progress/reading_progress.js"></script>
+
+
+  
+
+
+  <script src="wyprun.github.io/js/src/utils.js?v=7.0.1"></script>
+
+  <script src="wyprun.github.io/js/src/motion.js?v=7.0.1"></script>
+
+
+
+  
+  
+
+
+  <script src="wyprun.github.io/js/src/affix.js?v=7.0.1"></script>
+
+  <script src="wyprun.github.io/js/src/schemes/pisces.js?v=7.0.1"></script>
+
+
+
+
+  
+  <script src="wyprun.github.io/js/src/scrollspy.js?v=7.0.1"></script>
+<script src="wyprun.github.io/js/src/post-details.js?v=7.0.1"></script>
+
+
+
+  
+
+
+  <script src="wyprun.github.io/js/src/next-boot.js?v=7.0.1"></script>
+
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+
+  
+  <script>
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "wyprun.github.io/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url).replace(/\/{2,}/g, '/');
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x"></i></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x"></i></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+  
+  <script>
+    
+    function addCount(Counter) {
+      var $visitors = $('.leancloud_visitors');
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+
+      Counter('get', '/classes/Counter', { where: JSON.stringify({ url }) })
+        .done(function({ results }) {
+          if (results.length > 0) {
+            var counter = results[0];
+            
+            Counter('put', '/classes/Counter/' + counter.objectId, JSON.stringify({ time: { '__op': 'Increment', 'amount': 1 } }))
+            
+              .done(function() {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.time + 1);
+              })
+            
+              .fail(function ({ responseJSON }) {
+                console.log('Failed to save Visitor num, with error message: ' + responseJSON.error);
+              })
+          } else {
+            
+              var $element = $(document.getElementById(url));
+              $element.find('.leancloud-visitors-count').text('Counter not initialized! More info at console err msg.');
+              console.error('ATTENTION! LeanCloud counter has security bug, see how to solve it here: https://github.com/theme-next/hexo-leancloud-counter-security. \n However, you can still use LeanCloud without security, by setting `security` option to `false`.');
+            
+          }
+        })
+        .fail(function ({ responseJSON }) {
+          console.log('LeanCloud Counter Error: ' + responseJSON.code + ' ' + responseJSON.error);
+        });
+    }
+    
+
+    $(function() {
+      $.get('https://app-router.leancloud.cn/2/route?appId=' + '3fGaxGazaBXkRLCqgNY9S9mq-gzGzoHsz')
+        .done(function({ api_server }) {
+          var Counter = function(method, url, data) {
+            return $.ajax({
+              method: method,
+              url: 'https://' + api_server + '/1.1' + url,
+              headers: {
+                'X-LC-Id': '3fGaxGazaBXkRLCqgNY9S9mq-gzGzoHsz',
+                'X-LC-Key': 'YTAP53Yb2LaqWy6k4QrjRRhO',
+                'Content-Type': 'application/json',
+              },
+              data: data
+            });
+          };
+          
+            addCount(Counter);
+          
+        });
+    });
+  </script>
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
