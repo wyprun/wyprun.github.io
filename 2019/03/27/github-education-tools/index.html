@@ -106,6 +106,14 @@
 
 
 
+	<script>
+		(function(i,s,o,g,r,a,m){i["DaoVoiceObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;a.charset="utf-8";m.parentNode.insertBefore(a,m)})(window,document,"script",('https:' == document.location.protocol ? 'https:' : 'http:') + "//widget.daovoice.io/widget/c96195cd.js","daovoice")
+		daovoice('init', {
+			app_id: "c96195cd"
+		});
+		daovoice('update');
+	</script>
+
 
   <meta name="description" content="GitHub是一个利用Git进行版本控制、专门用于存放软件代码与内容的共享虚拟主机服务。它拥有针对学生的优惠，里面包含了众多服务。个人比较喜欢的是DigitalOcean服务器（免费100刀的新用户优惠，还可以再加50刀的账户余额）和亚马逊服务器，另外还有GitHub私有仓库、namecheap（.me域名一年）等优惠服务。不过部分服务在领取礼包的时候需要绑定信用卡，没有信用卡的同学需要先办理一张">
 <meta property="og:type" content="article">
@@ -519,6 +527,34 @@
           
 
           
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
+                
+                <span title="本文字数"></span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长"></span>
+              
+            </div>
+          
 
           
 
@@ -839,6 +875,30 @@
             
           
           
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+  <script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+  <script src="//cdn.bootcss.com/blueimp-md5/1.1.0/js/md5.min.js"></script>
+  <script>
+      var gitalk = new Gitalk({
+        clientID: 'df7ed995d23c34ba257a',
+        clientSecret: '4ea89d220eb95f87a3a525b1acabc0a66ddbac42',
+        repo: 'wyprun.github.io',
+        owner: 'wyprun',
+        admin: 'wyprun',
+        id: md5(location.pathname),
+        distractionFreeMode: 'true'
+      });
+      var div = document.createElement('div');
+      div.setAttribute("id", "gitalk_comments");
+      div.setAttribute("class", "post-nav");
+      var bro = document.getElementById('posts').getElementsByTagName('article');
+      bro = bro[0].getElementsByClassName('post-block');
+      bro = bro[0].getElementsByTagName('footer');
+      bro = bro[0];
+      bro.appendChild(div);
+      gitalk.render('gitalk_comments');
+  </script>
+
         </div>
       </div>
 
@@ -888,7 +948,21 @@
   <span class="author" itemprop="copyrightHolder">Yu</span>
 
   
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+    <span title="站点总字数"></span>
+  
 
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    
+    <span title="站点阅读时长"></span>
   
 </div>
 
@@ -1037,7 +1111,7 @@
     var isfetched = false;
     var isXml = true;
     // Search DB path;
-    var search_path = "";
+    var search_path = "search.xml";
     if (search_path.length === 0) {
       search_path = "search.xml";
     } else if (/json$/i.test(search_path)) {
